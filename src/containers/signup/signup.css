@@ -1,0 +1,187 @@
+
+.signup-container {
+    flex-grow: 1; /* This will allow the signup container to take up any remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: #0c0b0b;
+    overflow: auto; /* Adjust this to auto to ensure scrollbars only appear when necessary */
+    margin-bottom:100px;
+}
+
+.signup-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1; 
+}
+
+h2 {
+    color: #0c0b0b;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 20px 0; 
+}
+.signup-form {
+    flex-direction: column;
+    width: 550px; 
+    height: 660px;
+    align-items: center;
+    background: linear-gradient(rgba(17, 48, 77, 0.74), rgba(23, 65, 90, 0.5)), url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0');
+    border: 2px solid #050505; 
+    border-radius: 8px; 
+    padding: 20px; 
+    margin: 0 auto; 
+    margin-right: 150px;
+    margin-top:-300px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    width: 100%; 
+    margin-bottom: 20px; /* Increase the margin-bottom to create more space */
+    margin-top: 10px; /* Add a margin-top to create space above each input group */
+}
+
+
+.signup-label {
+    color: #f8f7f7;
+    margin-right: 10px; 
+    font-weight: bold;
+    font-size: 20px;
+    flex-shrink: 0; 
+}
+
+.username-icon, .password-icon {
+    height: 30px; 
+    width: 30px; 
+    margin-right: 10px; 
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #030303;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.3s ease;
+    width: calc(100% - 150px); 
+    flex-grow: 1; 
+}
+
+
+
+input:focus {
+    outline: none;
+    background-color: #eee;
+}
+
+.button1 {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
+button:hover {
+    background-color: #0056b3; 
+}
+
+.google-signin {
+    margin-top: 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4285F4; 
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    width: 100%;
+}
+
+.google-signin:hover {
+    background-color: #357ABD; 
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px;
+    background-color: #03045E; /* Adjust the background color as needed */
+   }
+   
+   .logo {
+    width: 100px;
+    
+}
+   
+   .sign-in-button {
+    background-color: #007bff; /* Adjust the background color as needed */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-right: 30px;
+   }
+   .footer {
+    background-color: #545a8db6; /* Match the header color for consistency */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 110%;
+    z-index: 998; /* Ensure the footer is above other content but below the header */
+    
+}
+   
+   .footer p {
+    margin: 0;
+   }   
+
+   .page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the container takes at least the full viewport height */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0');
+   }
+   .tale1{
+    color: rgb(252, 251, 251);
+    font-size: 20px;
+    font-weight: bold;
+    
+    
+}
+.svg-container {
+    display: flex;
+    flex-direction: column; /* Stack logo and SVG vertically */
+    align-items: center; /* Center logo and SVG horizontally */
+    margin-right: 600px; /* Space between logo/SVG and form */
+    margin-top: 300px;
+}
+   /*
+   .signup-container {
+    flex-grow: 1; 
+   }   
+   */
+   

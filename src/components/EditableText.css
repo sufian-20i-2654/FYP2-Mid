@@ -1,0 +1,143 @@
+/* EditableText.css */
+
+
+.right-corner-div {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 700px; /* Adjust the width as needed */
+    background-color: #050505; /* Example background color */
+    overflow: hidden; /* Disables both horizontal and vertical scrolling */
+    border-left: 1px solid #030303;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+
+   }
+   .text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    background-color: #9b9a9a;
+    border: 1px solid #2b2a2a;
+    width: 100%;
+    box-sizing: border-box;
+    height: 890px;
+    margin-left: 10px;
+    margin-top: 20px;
+    overflow-y: auto;
+    overflow-x: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+textarea {
+    width: 100%;
+    min-width: 800px; /* Example: Set a minimum width that is larger than the .text-box's width */
+    height: 100%;
+    resize: none; /* Prevents the text area from being resized */
+}
+
+.save-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 350px;
+    width: 100px;
+
+   }
+   
+   .save-button:hover {
+    background-color: #0056b3;
+   }
+   .hidden {
+    display: none;
+   }
+   /* EditableText.css */
+
+.parent-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* Align children to the start */
+    align-items: flex-start; /* Align children to the top */
+    height: 100vh; /* Adjust the height as needed */
+   }
+   
+   
+   .typing-effect-container {
+    margin-right: 20px; /* Adjust the space between the typing effect and the text area */
+    margin-top: 400px; /* Adjust the space between the typing effect and the top */
+    /* Additional styling for the typing effect container */
+   }
+   
+   .typing-effect {
+    /* Styles for the typing effect text */
+    color: #d292ff; /* Keep the text color white for contrast */
+    font-weight: bold;
+    font-size: 40px; /* Increase the font size for a more prominent effect */
+    font-family: 'Courier New', Courier, monospace; /* Use a more sophisticated font */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow for a fancier look */
+    /* Add a background gradient for a more dynamic appearance */
+    /* background: linear-gradient(to right, #050505, #030303); */
+    padding: 10px; /* Add some padding around the text */
+    border-radius: 5px; /* Add rounded corners for a softer look */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); Add a subtle box shadow for depth */
+    margin-left: -60px; /* Adjust the space between the typing effect and the text area */
+}
+
+   /* Add this to your CSS file */
+/* EditableText.css */
+
+.spinner {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    position: fixed; /* Position the spinner in the center of the page */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for the spinner's own dimensions */
+    z-index: 1000; /* Ensure the spinner is above other content */
+}
+
+/* Add a blur effect to the body when the spinner is visible */
+body.loading {
+    filter: blur(5px);
+}
+/* EditableText.css */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 999; /* Ensure the overlay is above other content but below the spinner */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo6{
+    width: 100px;
+    opacity: 0.7;
+    
+}
+   
+   /* @keyframes spin {
+     0% { transform: rotate(0deg); }
+     100% { transform: rotate(360deg); }
+   } */

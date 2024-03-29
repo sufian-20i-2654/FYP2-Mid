@@ -1,0 +1,79 @@
+/* FinalVideoPage.css */
+
+.header5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #171150; /* Example background color */
+   }
+   
+   .nav3 {
+    display: flex;
+    gap: 20px;
+   }
+   
+   
+   .nav-button {
+    background-color: #007bff; /* Example button color */
+    color: white; /* Text color */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    
+}
+   
+   .nav-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+   }
+   
+   .logo img {
+    height: 100px; /* Adjust as needed */
+    margin-left: 30px;
+   }
+   
+   .video-container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 70px); /* Adjust based on header height */
+    background-color: #000f1f; /* Example background color */
+    padding: 20px;
+}
+   
+   .centered-video {
+    max-width: 90%;
+    max-height: 90%;
+    border: 5px solid #007bff;
+    margin-top:90px;
+   }
+   
+
+
+.footer5 {
+    background-color: #444f7e; /* Example background color */
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 7px solid #444f7e; /* Optional: Add a border at the top */
+   }
+   
+   .footer5 p {
+    margin: 0;
+    padding: 0;
+    color: rgb(250, 249, 249);
+   }
+   
+   .footer5 a {
+    color: #007bff; /* Example link color */
+    text-decoration: none;
+   }
+   
+   .footer5 a:hover {
+    text-decoration: underline;
+   }
+    
